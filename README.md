@@ -76,7 +76,7 @@ pip install streamlit
 
 4. **Download the Application Code**
 Save the Python script containing the quiz app code (e.g.,
-indonesia_quiz.py) to your local machine.
+fun_project_1.py to your local machine.
 
 By following these steps, you will have a ready environment to run the
 quiz app smoothly.
@@ -223,7 +223,7 @@ guidelines:
 5. **Fork or Clone the Repository**
 Obtain a local copy of the project files.
 6. **Locate the Questions Dictionary**
-In the main Python script (indonesia_quiz.py), find the dictionary named
+In the main Python script (fun_project_1.py, find the dictionary named
 questions. This dictionary holds all quiz questions as keys, with their
 corresponding answer choices, correct answers, and feedback messages
 as values.
