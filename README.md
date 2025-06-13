@@ -87,7 +87,7 @@ Once the installation is complete, running the Mini Quiz App is
 straightforward. Open your terminal or command prompt, navigate to the
 directory containing the app script, and execute the following command:
 
-streamlit run indonesia_quiz.py
+streamlit run fun_project_1.py
 
 This command launches the Streamlit server and automatically opens the
 app in your default web browser. The interface is user-friendly, with
@@ -342,7 +342,7 @@ everyone.
 ● GitHub Repository: [Link to repository if available]
 ```
 ```
-● Email: support@indonesiaquizapp.com
+● Email: abigivan99@gmail.com
 ```
 ```
 ● Community Forum: Join discussions and share your experiences
@@ -496,7 +496,7 @@ the app.
 ● Port Conflicts : If Streamlit fails to start due to port conflicts,
 specify a different port using:
 ```
-streamlit run indonesia_quiz.py --server.port 8502
+streamlit run fun_project_1.py --server.port 8502
 
 ```
 ● Browser Not Opening : If the app does not open automatically,
