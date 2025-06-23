@@ -73,13 +73,15 @@ def mini_quiz_app():
         score = st.session_state.score
         st.write(f"Skor Anda: **{score} / {total_questions}**")
 
-        # Show detailed feedback for each question
-        for question, data in questions.items():
+        # Show detailed feedback for each question, numbered and with correct answer displayed
+        for idx, (question, data) in enumerate(questions.items(), 1):
             user_answer = st.session_state.answers.get(question)
             if user_answer == data["correct"]:
-                st.success(f"✅ {question} - {data['correct_msg']}")
+                st.success(f"{idx}. ✅ {question}\n{data['correct_msg']}")
             else:
-                st.error(f"❌ {question} - {data['incorrect_msg']}")
+                st.error(f"{idx}. ❌ {question}\n{data['incorrect_msg']}")
+            # Display the correct answer (fact) below each explanation
+            st.info(f"Jawaban yang benar: **{data['correct']}**")
 
         # Profession suggestion based on score
         profession = ""
@@ -109,6 +111,11 @@ def mini_quiz_app():
 
     st.markdown("---")
     st.write("Selamat mencoba dan semoga Anda mendapatkan hasil terbaik! 🎉")
+    st.write("Jika Anda ingin mencoba lagi, silakan muat ulang halaman ini.")
+    
+    # Footer with a link to the source code
+    st.markdown("---")
+    st.markdown("Developer by Abizar Al Gifari Rahman 😎(https://github.com/AbizarAlGifari/fun_project_1_abizar)")
 
 # Run the app
 if __name__ == "__main__":
